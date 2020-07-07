@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:id="@+id/cardView"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="3dp"
+                android:background="@color/black"
+                android:id="@+id/viewActive"
+                android:layout_height="70dp"></View>
+
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/logoMun"
+                android:layout_toRightOf="@id/viewActive"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_height="55dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:id="@+id/titleMun"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:visibility="visible"
+        android:layout_below="@+id/cardView"
+        android:id="@+id/line_separator"
+
+        android:layout_height="0.7dp">
+
+    </View>
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#fff"
+        android:layout_margin="3dp"
+
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:background="@color/gris"
+                android:id="@+id/viewActive"
+                android:layout_height="wrap_content"></View>
+
+
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/logoMun"
+                android:layout_toRightOf="@id/viewActive"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_height="55dp">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:id="@+id/titleMun"
+
+                    android:textColor="@color/dark"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:visibility="visible"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="3dp"
+        android:id="@+id/line_separator"
+
+        android:layout_height="0.7dp">
+
+    </View>
+
+
+
+
+</RelativeLayout> -->

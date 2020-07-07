@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:paddingLeft="50dp"
+            android:textSize="50dp"
+            android:text="Baladiyetna"
+            android:paddingRight="50dp"
+           />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/large_round_rect_main"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="مرحبا بيك في منصة البلدية الرقمية !"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="#fff"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:hint="رقم الهاتف"
+            android:inputType="phone"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="#fff"
+
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="كلمة السر"
+                android:inputType="textPassword"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp" />
+
+            <ImageView
+                android:id="@+id/imageView_passwordvisibletoggle"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:visibility="invisible"
+                android:tint="#555"></ImageView>
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pink"
+            android:onClick="login"
+            android:text="تسجيل الدخول"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:onClick="reset_password"
+            android:text="نسيت كلمة السر ؟"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:onClick="signup"
+            android:text="إنشاء حساب جديد"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
